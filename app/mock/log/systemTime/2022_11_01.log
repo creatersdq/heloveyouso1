@@ -1,0 +1,239 @@
+2022-11-01 14:30:16.524 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 14:30:16.510987->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to start
+2022-11-01 14:30:16.536 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 14:30:16.510987->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to end,the processing time is 0.02032613754272461
+2022-11-01 14:30:16.568 | INFO     | app.extensions.logger:get_log:70 - 
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 14:30:16  Samples:  24
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 0.027     CPU time: 0.024
+/   _/                      v4.2.0
+
+Program: /Library/Frameworks/Python.framework/Versions/3.8/bin/uvicorn main:test_mock_app --host 0.0.0.0 --port 8989 --reload
+
+0.026 _run  asyncio/events.py:79
+|- 0.022 run_asgi  uvicorn/protocols/http/h11_impl.py:371
+|     [7 frames hidden]  uvicorn, fastapi, starlette
+|        0.022 __call__  starlette/middleware/base.py:20
+|        `- 0.022 response_cost_time  __init__.py:30
+|           |- 0.021 get_log  extensions/logger.py:58
+|           |  |- 0.016 add  loguru/_logger.py:219
+|           |  |     [67 frames hidden]  loguru, sysconfig, posixpath, <built-...
+|           |  |        0.005 _extend_dict  sysconfig.py:160
+|           |  |- 0.003 info  loguru/_logger.py:1975
+|           |  |     [10 frames hidden]  loguru, <built-in>
+|           |  `- 0.002 [self]  
+|           `- 0.001 call_next  starlette/middleware/base.py:25
+|                 [4 frames hidden]  starlette, anyio, <string>
+`- 0.004 coro  starlette/middleware/base.py:29
+      [12 frames hidden]  starlette, fastapi
+         0.003 run_endpoint_function  fastapi/routing.py:151
+         `- 0.003 policy_insure_interface  routers/policy/mock/drug.py:108
+            `- 0.003 insure_data_del  public/policy/mock/api.py:13
+               |- 0.001 xml_to_json  extensions/xml_str_del.py:5
+               |  `- 0.001 parse  xmltodict.py:202
+               |        [2 frames hidden]  xmltodict
+               |- 0.001 loads  json/__init__.py:299
+               |     [2 frames hidden]  json
+               `- 0.001 json_to_xml  extensions/xml_str_del.py:19
+                  `- 0.001 unparse  xmltodict.py:476
+                        [3 frames hidden]  xmltodict, <built-in>
+
+
+2022-11-01 15:16:31.824 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 15:16:31.805764->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to start
+2022-11-01 15:16:31.839 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 15:16:31.805764->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to end,the processing time is 0.026475906372070312
+2022-11-01 15:16:31.866 | INFO     | app.extensions.logger:get_log:70 - 
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:16:31  Samples:  30
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 0.035     CPU time: 0.031
+/   _/                      v4.2.0
+
+Program: /Library/Frameworks/Python.framework/Versions/3.8/bin/uvicorn main:test_mock_app --host 0.0.0.0 --port 8989 --reload
+
+0.034 _run  asyncio/events.py:79
+|- 0.029 run_asgi  uvicorn/protocols/http/h11_impl.py:371
+|     [7 frames hidden]  uvicorn, fastapi, starlette
+|        0.029 __call__  starlette/middleware/base.py:20
+|        `- 0.029 response_cost_time  __init__.py:30
+|           |- 0.028 get_log  extensions/logger.py:58
+|           |  |- 0.024 add  loguru/_logger.py:219
+|           |  |     [24 frames hidden]  loguru, sysconfig, posixpath, <built-...
+|           |  |        0.011 _extend_dict  sysconfig.py:160
+|           |  |- 0.002 remove  loguru/_logger.py:969
+|           |  |     [7 frames hidden]  loguru, <built-in>
+|           |  `- 0.002 info  loguru/_logger.py:1975
+|           |        [5 frames hidden]  loguru
+|           `- 0.001 call_next  starlette/middleware/base.py:25
+|                 [4 frames hidden]  starlette, anyio, <string>
+`- 0.005 coro  starlette/middleware/base.py:29
+      [9 frames hidden]  starlette, fastapi
+         0.004 run_endpoint_function  fastapi/routing.py:151
+         `- 0.004 policy_insure_interface  routers/policy/mock/drug.py:108
+            `- 0.004 insure_data_del  public/policy/mock/api.py:13
+               |- 0.003 xml_to_json  extensions/xml_str_del.py:5
+               |  |- 0.002 parse  xmltodict.py:202
+               |  |     [4 frames hidden]  xmltodict, <built-in>
+               |  `- 0.001 [self]  
+               `- 0.001 json_to_xml  extensions/xml_str_del.py:19
+                  `- 0.001 unparse  xmltodict.py:476
+                        [6 frames hidden]  xmltodict, xml
+
+
+2022-11-01 15:20:16.503 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 15:20:16.490411->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to start
+2022-11-01 15:20:16.509 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 15:20:16.490411->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to end,the processing time is 0.015913009643554688
+2022-11-01 15:20:16.530 | INFO     | app.extensions.logger:get_log:70 - 
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:20:16  Samples:  18
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 0.020     CPU time: 0.020
+/   _/                      v4.2.0
+
+Program: /Library/Frameworks/Python.framework/Versions/3.8/bin/uvicorn main:test_mock_app --host 0.0.0.0 --port 8989 --reload
+
+0.019 _run  asyncio/events.py:79
+|- 0.017 run_asgi  uvicorn/protocols/http/h11_impl.py:371
+|     [7 frames hidden]  uvicorn, fastapi, starlette
+|        0.017 __call__  starlette/middleware/base.py:20
+|        `- 0.017 response_cost_time  __init__.py:30
+|           `- 0.017 get_log  extensions/logger.py:58
+|              `- 0.017 add  loguru/_logger.py:219
+|                    [63 frames hidden]  loguru, sysconfig, posixpath, <built-...
+|                       0.005 _extend_dict  sysconfig.py:160
+`- 0.002 coro  starlette/middleware/base.py:29
+      [8 frames hidden]  starlette, fastapi
+         0.002 run_endpoint_function  fastapi/routing.py:151
+         `- 0.002 policy_insure_interface  routers/policy/mock/drug.py:108
+            `- 0.002 insure_data_del  public/policy/mock/api.py:13
+               `- 0.002 xml_to_json  extensions/xml_str_del.py:5
+                  |- 0.001 [self]  
+                  `- 0.001 parse  xmltodict.py:202
+                        [2 frames hidden]  xmltodict
+
+
+2022-11-01 15:21:02.233 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 15:21:02.223138->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to start
+2022-11-01 15:21:02.243 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 15:21:02.223138->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to end,the processing time is 0.01452493667602539
+2022-11-01 15:21:02.266 | INFO     | app.extensions.logger:get_log:70 - 
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:21:02  Samples:  20
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 0.021     CPU time: 0.021
+/   _/                      v4.2.0
+
+Program: /Library/Frameworks/Python.framework/Versions/3.8/bin/uvicorn main:test_mock_app --host 0.0.0.0 --port 8989 --reload
+
+0.020 _run  asyncio/events.py:79
+|- 0.016 run_asgi  uvicorn/protocols/http/h11_impl.py:371
+|     [7 frames hidden]  uvicorn, fastapi, starlette
+|        0.016 __call__  starlette/middleware/base.py:20
+|        `- 0.016 response_cost_time  __init__.py:30
+|           `- 0.016 get_log  extensions/logger.py:58
+|              |- 0.014 add  loguru/_logger.py:219
+|              |     [46 frames hidden]  loguru, sysconfig, posixpath, <built-...
+|              `- 0.002 info  loguru/_logger.py:1975
+|                    [8 frames hidden]  loguru, posixpath, genericpath
+|- 0.003 coro  starlette/middleware/base.py:29
+|     [8 frames hidden]  starlette, fastapi
+|        0.003 run_endpoint_function  fastapi/routing.py:151
+|        `- 0.003 policy_insure_interface  routers/policy/mock/drug.py:108
+|           |- 0.002 insure_data_del  public/policy/mock/api.py:13
+|           |  `- 0.002 xml_to_json  extensions/xml_str_del.py:5
+|           |     |- 0.001 [self]  
+|           |     `- 0.001 dumps  json/__init__.py:183
+|           |           [6 frames hidden]  json
+|           `- 0.001 [self]  
+`- 0.001 [self]  
+
+
+2022-11-01 15:21:54.915 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 15:21:54.901703->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to start
+2022-11-01 15:21:54.934 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 15:21:54.901703->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to end,the processing time is 0.026994943618774414
+2022-11-01 15:21:54.970 | INFO     | app.extensions.logger:get_log:70 - 
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:21:54  Samples:  24
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 0.034     CPU time: 0.025
+/   _/                      v4.2.0
+
+Program: /Library/Frameworks/Python.framework/Versions/3.8/bin/uvicorn main:test_mock_app --host 0.0.0.0 --port 8989 --reload
+
+0.033 _run  asyncio/events.py:79
+|- 0.031 run_asgi  uvicorn/protocols/http/h11_impl.py:371
+|     [7 frames hidden]  uvicorn, fastapi, starlette
+|        0.031 __call__  starlette/middleware/base.py:20
+|        `- 0.031 response_cost_time  __init__.py:30
+|           |- 0.030 get_log  extensions/logger.py:58
+|           |  |- 0.020 add  loguru/_logger.py:219
+|           |  |     [73 frames hidden]  loguru, sysconfig, posixpath, re, sre...
+|           |  |        0.009 _extend_dict  sysconfig.py:160
+|           |  `- 0.010 info  loguru/_logger.py:1975
+|           |        [10 frames hidden]  loguru, <built-in>, calendar
+|           |           0.009 TextIOWrapper.write  <built-in>:0
+|           `- 0.001 call_next  starlette/middleware/base.py:25
+|                 [5 frames hidden]  starlette, anyio, asyncio
+`- 0.002 coro  starlette/middleware/base.py:29
+      [8 frames hidden]  starlette, fastapi
+         0.002 run_endpoint_function  fastapi/routing.py:151
+         `- 0.002 policy_insure_interface  routers/policy/mock/drug.py:108
+            `- 0.002 insure_data_del  public/policy/mock/api.py:13
+               |- 0.001 xml_to_json  extensions/xml_str_del.py:5
+               |  `- 0.001 parse  xmltodict.py:202
+               |        [2 frames hidden]  xmltodict
+               `- 0.001 datetime.strftime  <built-in>:0
+                     [2 frames hidden]  <built-in>
+
+
+2022-11-01 15:22:50.954 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 15:22:50.940034->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to start
+2022-11-01 15:22:50.967 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 15:22:50.940034->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to end,the processing time is 0.02075505256652832
+2022-11-01 15:22:51.000 | INFO     | app.extensions.logger:get_log:70 - 
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:22:50  Samples:  26
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 0.028     CPU time: 0.028
+/   _/                      v4.2.0
+
+Program: /Library/Frameworks/Python.framework/Versions/3.8/bin/uvicorn main:test_mock_app --host 0.0.0.0 --port 8989 --reload
+
+0.027 _run  asyncio/events.py:79
+|- 0.023 run_asgi  uvicorn/protocols/http/h11_impl.py:371
+|     [7 frames hidden]  uvicorn, fastapi, starlette
+|        0.023 __call__  starlette/middleware/base.py:20
+|        `- 0.023 response_cost_time  __init__.py:30
+|           |- 0.022 get_log  extensions/logger.py:58
+|           |  |- 0.021 add  loguru/_logger.py:219
+|           |  |     [69 frames hidden]  loguru, sysconfig, posixpath, <built-...
+|           |  |        0.008 _extend_dict  sysconfig.py:160
+|           |  `- 0.001 info  loguru/_logger.py:1975
+|           |        [6 frames hidden]  loguru, <built-in>
+|           `- 0.001 call_next  starlette/middleware/base.py:25
+|                 [4 frames hidden]  starlette, anyio
+`- 0.004 coro  starlette/middleware/base.py:29
+      [8 frames hidden]  starlette, fastapi
+         0.004 run_endpoint_function  fastapi/routing.py:151
+         `- 0.004 policy_insure_interface  routers/policy/mock/drug.py:108
+            |- 0.003 insure_data_del  public/policy/mock/api.py:13
+            |  |- 0.001 random_no  public/uuid_generate.py:4
+            |  |- 0.001 json_to_xml  extensions/xml_str_del.py:19
+            |  |  `- 0.001 unparse  xmltodict.py:476
+            |  |        [4 frames hidden]  xmltodict
+            |  `- 0.001 xml_to_json  extensions/xml_str_del.py:5
+            |     `- 0.001 parse  xmltodict.py:202
+            |           [5 frames hidden]  xmltodict, <built-in>
+            `- 0.001 [self]  
+
+
+2022-11-01 15:24:12.584 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 15:24:12.579122->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to start
+2022-11-01 15:24:12.589 | INFO     | app.extensions.logger:get_log:70 - 2022-11-01 15:24:12.579122->Request url:http://0.0.0.0:8989/policy/mock/drug/api/insure to end,the processing time is 0.007985830307006836
+2022-11-01 15:24:12.604 | INFO     | app.extensions.logger:get_log:70 - 
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:24:12  Samples:  10
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 0.011     CPU time: 0.010
+/   _/                      v4.2.0
+
+Program: /Library/Frameworks/Python.framework/Versions/3.8/bin/uvicorn main:test_mock_app --host 0.0.0.0 --port 8989 --reload
+
+0.010 _run  asyncio/events.py:79
+|- 0.009 run_asgi  uvicorn/protocols/http/h11_impl.py:371
+|     [7 frames hidden]  uvicorn, fastapi, starlette
+|        0.009 __call__  starlette/middleware/base.py:20
+|        `- 0.009 response_cost_time  __init__.py:30
+|           `- 0.009 get_log  extensions/logger.py:58
+|              |- 0.008 add  loguru/_logger.py:219
+|              |     [33 frames hidden]  loguru, sysconfig, posixpath, <built-...
+|              |        0.003 _extend_dict  sysconfig.py:160
+|              `- 0.001 info  loguru/_logger.py:1975
+|                    [6 frames hidden]  loguru, <built-in>
+`- 0.001 coro  starlette/middleware/base.py:29
+      [8 frames hidden]  starlette, fastapi
+         0.001 run_endpoint_function  fastapi/routing.py:151
+         `- 0.001 policy_insure_interface  routers/policy/mock/drug.py:108
+            `- 0.001 insure_data_del  public/policy/mock/api.py:13
+               `- 0.001 xml_to_json  extensions/xml_str_del.py:5
+                  `- 0.001 dumps  json/__init__.py:183
+                        [8 frames hidden]  json
+
+

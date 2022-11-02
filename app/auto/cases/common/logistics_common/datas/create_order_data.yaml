@@ -1,0 +1,365 @@
+#base_url: http://outreach.express.module.turboradio.cn/api/order/addOrder
+#store_id: '7590'
+#headers: {'Content-Type':'application/json'}
+#data:
+#  assistant:
+#    fullName: 陈靓
+#    gmtOrderTake: '2020-09-06 11:53:15'
+#    jobNumber: ''
+#    memberId: 50894
+#    memberIdCard: '310221196907242028'
+#    mobile: '13611984937'
+#    orderNo: '20090616224467379697'
+#    wx_memberId: 1315059
+#  assistantId: 172958
+#  balanceDiscount: 88
+#  billAmount: 101.7
+#  cancelReason: ''
+#  channel: 2
+#  cooperationCode: '2018090300074353697802'
+#  couponAmount: 0
+#  couponId: '0'
+#  creditAmount: 0
+#  deliverMethod: 4
+#  directAmount: 101.7
+#  erpImage: null
+#  erpSn: null
+#  extra:
+#    deviceModel: ''
+#    deviceUuid: ''
+#    deviceVentor: ''
+#    imei: ''
+#    ip: ''
+#    locationLat: ''
+#    locationLng: ''
+#    mainOrderNo: '80051205158747543798'
+#    payMode: EQUITY
+#    takeNo: '6327'
+#    terminal: ''
+#    transmission: '{"waybillNo":"2005121009910010151518433","images":["http://test-ota.oss-cn-shanghai.aliyuncs.com/bc053089ee456a7079f0b34cb9479dcb.jpeg"]}'
+#  feeAmount: 0
+#  gmtCanceled: null
+#  gmtPaid: '2020-05-12 15:34:26'
+#  gmtPayExpired: '2020-05-12 16:04:19'
+#  goodsQuantity: 4
+#  integralCashAmount: 0
+#  internalCode: hunanyifeng
+#  itemQuantity: 4
+#  itemsList:
+#  - commonName: 小儿豉翘清热颗粒
+#    quantity: 1
+#    unitPrice: 48.8
+#  - commonName: 小儿氨酚黄那敏颗粒
+#    quantity: 1
+#    unitPrice: 35
+#  - commonName: 拜阿司匹灵 阿司匹林肠溶片
+#    quantity: 1
+#    unitPrice: 17.9
+#  mainOrderNo: '80051205158747543798'
+#  mainShortNo: '58747543798'
+#  manualCreated: '2020-05-12 15:34:19'
+#  memberId: 15958481
+#  merchantId: 744
+#  merchantName: 湖南益丰大药房医药连锁有限公司
+#  merchantType: 1
+#  orderNo: null
+#  parentOrderNo: null
+#  payAmount: 0
+#  remark: ''
+#  serviceQuantity: 0
+#  shipment:
+#    address: 清华大学东门
+#    city: 北京市
+#    lat: '40.002349'
+#    lng: '116.339392'
+#    locationLat: ''
+#    locationLng: ''
+#    province: 北京市
+#    recipientMobile: '18888888888'
+#    recipientName: 顺丰同城
+#    region: 海淀区
+#  shortNo: '111924'
+#  storeCode: '2018090302141753710992'
+#  storeId: null
+#  storeName: 上海交城路店
+#  storeinternalId: ''
+#  storelocation: 121.425698,31.293144
+#  totalAmount: 101.7
+
+
+
+base_url: http://outreach.express.module.turboradio.cn/api/order/addOrder
+headers:
+  Content-Type: application/json
+store_id: '1008611'
+data:
+  activityAmount: 0
+  activityDOList: null
+  assistant:
+    fullName: 黄婕
+    gmtOrderTake: '2021-01-13 12:21:45'
+    jobNumber: ''
+    memberId: 186975
+    memberIdCard: '445381199703141726'
+    mobile: '13077424518'
+    orderNo: '21011312407255400205'
+    wx_memberId: 6378041
+  assistantId: 186975
+  auditStatus: 0
+  balanceDiscount: 88
+  billAmount: 82
+  cancelReason: ''
+  cancelStatus: 0
+  cancelTimeOut: 30
+  channel: 2
+  channelVersion: 1.0.0
+  claim:
+    consumeNo: null
+    equityId: '29869212'
+    mainOrderNo: '21011302407255390281'
+    precheckNo: '2101131212592077294967928584'
+    precheckTime: '2021-01-13 12:12:59'
+  cooperationCode: '2018092008640730045310'
+  couponAmount: 0
+  couponDOList: null
+  couponId: '0'
+  couponOrderAmount: 0
+  couponTotalAmount: 0
+  creditAmount: 0
+  deliverMethod: 4
+  directAmount: 82
+  dstsale: null
+  equityId: '29869212'
+  erpImage: null
+  erpSn: null
+  exchangeAmount: 0
+  exchangeDOList: null
+  extra:
+    deviceModel: ''
+    deviceUuid: ''
+    deviceVentor: ''
+    imei: ''
+    ip: 172.16.84.161
+    locationLat: ''
+    locationLng: ''
+    mainOrderNo: '21011302407255390281'
+    orderVersion: v660
+    payMode: EQUITY
+    paymentNo: '202101130152690605781'
+    takeNo: '4092'
+    terminal: ''
+    transmission: '{"waybillNo":"2101135599525148985458046"}'
+  feeAmount: 0
+  feeCouponAmount: 0
+  gmtCanceled: null
+  gmtPaid: '2021-01-13 12:13:02'
+  gmtPayExpired: '2021-01-13 12:42:59'
+  gmtReceived: null
+  goodsQuantity: 4
+  hasHx: 0
+  hidden: 0
+  integralCashAmount: 0
+  internalCode: dashenlin
+  invoice:
+    address: null
+    autoInvoice: null
+    bankName: null
+    bankNumber: null
+    content: null
+    email: null
+    invoiceId: null
+    invoiceState: null
+    invoiceTitleId: null
+    mainOrderNo: '21011302407255390281'
+    ownerType: null
+    taxNo: null
+    telephone: null
+    title: null
+    type: null
+  isSelfToEquity: 0
+  itemCouponAmount: 0
+  itemInsuranceDOList: null
+  itemInsuredDOList: null
+  itemQuantity: 4
+  itemType: 1
+  itemsList:
+  - activityAmount: 0
+    activityType: 0
+    approvalNumber: 国药准字Z10950088
+    auditNo: null
+    auditStatus: 0
+    batchNumber: null
+    bundleId: null
+    commonName: 清开灵颗粒(白云山)
+    couponAmount: 0
+    creditAmount: 0
+    directAmount: 82
+    expireDate: null
+    form: 10g*20小袋
+    goodsNo: null
+    id: 57244949
+    image: http:\/\/uniondrug-release.oss-cn-shanghai.aliyuncs.com\/oss\/upload\/file\/goods\/1574990852650.jpg
+    integralCashAmount: 0
+    internalId: '8101358'
+    itemCategory: DRUG
+    itemInsuranceDO: null
+    itemInsuredDOList: null
+    itemPresentDO: null
+    itemType: 1
+    manufacturer: null
+    merchantId: 86408
+    orderNo: '21011312407255400205'
+    pack: 包
+    payItemDOList:
+    - amount: 82
+      extra1: '2101131212592077294967928584'
+      extra2: null
+      extra3: null
+      extra4: null
+      extra5: null
+      extraAmount1: null
+      extraAmount2: null
+      extraAmount3: null
+      extraAmount4: null
+      extraAmount5: null
+      gmtCreated: '2021-01-13 12:12:59'
+      id: 40801569
+      itemId: 57244949
+      level: 3
+      mainOrderNo: '21011302407255390281'
+      orderNo: null
+      originalSourceId: null
+      refNo: '29869212'
+      scene: null
+      subType: 3
+      type: EQUITY
+    price: null
+    productId: null
+    productionDate: null
+    quantity: 4
+    refNo: '8101358'
+    remainDirectAmount: 82
+    remainQuantity: 4
+    saleAmount: 0
+    subItemList: null
+    subItemType: null
+    totalAmount: 82
+    tradeCode: '6914159003895'
+    transferOrderNo: null
+    unitPrice: 20.5
+  levelType: 2
+  logisticsDOList: null
+  mainOrderNo: '21011302407255390281'
+  mainShortNo: '40725539891'
+  manualCreated: '2021-01-13 12:12:59'
+  member:
+    fullName: 胡灶原
+    idcard: '441223198308121138'
+    mainOrderNo: '21011302407255390281'
+    memberId: '20270253'
+    mobile: '13420774092'
+    openId: null
+    thirdType: null
+  memberId: 20270253
+  merchantId: 86408
+  merchantName: 大参林医药集团股份有限公司
+  merchantType: 1
+  needPush: 1
+  normalDirectAmount: 0
+  orderMethod: 3
+  orderMethodText: 普通
+  orderNo: '21011312407255406765'
+  orderStatus: 2
+  packageOrder: 0
+  parentOrderNo: null
+  partnerDO:
+    extra: null
+    mainOrderNo: '21011302407255390281'
+    merchantId: 539
+    merchantInternalId: yaolianjiankang
+    merchantName: 药联健康
+    merchantShortName: 药联健康
+    merchantType: 1
+    orderSource: null
+  payAmount: 0
+  payMainList:
+  - amount: 82
+    extra1: '2101131212592077294967928584'
+    extra2: null
+    extra3: null
+    extra4: null
+    extra5: null
+    extraAmount1: null
+    extraAmount2: null
+    extraAmount3: null
+    extraAmount4: null
+    extraAmount5: null
+    id: 23002106
+    mainOrderNo: '21011302407255390281'
+    orderNo: '21011302407255390281'
+    refNo: '29869212'
+    scene: null
+    subType: 3
+    type: EQUITY
+  paySubList:
+  - amount: 82
+    extra1: '2101131212592077294967928584'
+    extra2: null
+    extra3: null
+    extra4: null
+    extra5: null
+    extraAmount1: null
+    extraAmount2: null
+    extraAmount3: null
+    extraAmount4: null
+    extraAmount5: null
+    id: 23025704
+    mainOrderNo: '21011302407255390281'
+    orderNo: '21011312407255400205'
+    refNo: '29869212'
+    scene: null
+    subType: 3
+    type: EQUITY
+  pushStatus: 0
+  receiveTimeOut: 10080
+  receiveType: 0
+  refundStatus: -1
+  remark: null
+  saleAmount: 0
+  salerCooperationCode: '2018090300053853697066'
+  salerInternalCode: yaolianjiankang
+  salerMerchantId: 539
+  salerMerchantName: 药联健康
+  salerStoreCode: '2019051500053985174370'
+  salerStoreId: 7590
+  salerStoreInternalId: juyin
+  salerStoreLocation: 0.000000,0.000000
+  salerStoreName: 增值服务商城
+  serviceQuantity: 0
+  shipment:
+    address: 广东省佛山市南海区和桂工业园a区南尚电工有限公司
+    addressTag: 其他
+    area: 广东省佛山市南海区
+    city: 佛山市
+    gmtDeliverFrom: null
+    gmtDeliverTo: null
+    locationLat: '23.251818'
+    locationLng: '113.090016'
+    mainOrderNo: '21011302407255390281'
+    orderNo: '21011312407255400205'
+    province: 广东省
+    recipientMobile: '13420774092'
+    recipientName: 胡灶原
+    region: 南海区
+    street: 和桂工业园a区南尚电工有限公司
+  shortNo: '07255400205'
+  storeCode: '2018092008683430045598'
+  storeId: null
+  storeName: 2689分店佛山官窑大道
+  storeinternalId: '13076'
+  storelocation: 113.081552,23.227862
+  subItemType: 10
+  syncStatus: 0
+  thirdInfoList: null
+  totalAmount: 82
+  viewStatus: 2

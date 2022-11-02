@@ -1,0 +1,19 @@
+headers:
+  Content-Type: "application/json"
+
+
+# /api/stock/search   库存查询
+stocks_search:
+  url: "http://stock.partners.backend.turboradio.cn/api/stock/search"
+  data:
+    cooperation: beijingduanshianlijinxiang
+    storeNo: '100710'
+    node: '1'
+    goodsIds:
+      - '220149511'
+      - '2169838'
+      - '2137600'
+      - '2193641'
+      - '2185671'
+      - '2072336'
+

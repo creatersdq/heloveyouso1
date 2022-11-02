@@ -1,0 +1,56 @@
+headers:
+  Content-Type: "application/json"
+#  Authorization: "Bearer e6fa02eb-2963-479e-960a-0ee58db6583f"  #test的
+#  Authorization: "Bearer fd78cb62-7d65-40f6-b87e-51b96a81abbe"  #rc的
+
+# /coupon/consumeMarketCoupon/post  优惠权益和超级会员日方案试算接口
+market_coupon:
+  url: "http://java.promotecenter.service.turboradio.cn/coupon/marketCouponTrial"
+  data:
+    channelType: '2'    #1 药店宝  2 药联到家  7 第三方健康服务
+    goodsList:
+      - couponAmount: 0
+        drugType: 0
+        goodsAmount: 100
+        goodsNumber: 1
+        goodsType: 1
+        itemUuid: 74e8ba1654164682ad293df3521442df
+        merchantId: 578
+        goodsBarCode: '6928986840011'
+        skuNo: '9177795238566035480'
+        storeId: 1363
+    memberId: 16232532
+    merchantId: 578
+    orderAmount: 100
+    requestNo: 3af3a6fd3ad3528e744
+
+
+# /deductCoupon/couponTrialForOrder/post  优惠券试算接口
+deduct_coupon:
+  url: "http://java.promotecenter.service.turboradio.cn/deductCoupon/couponTrialForOrder"
+  data:
+    partnerId: 578
+    memberId: 15965639
+    channelType: 2    # 1:药店宝 2:o2o
+    requestNo: "1"
+    goodsList:
+      - goodsAmount: '100'   # 商品价格
+        skuNo: "9177795238566035480"
+        goodsBarCode: "6928986840011"
+        goodsType: "1"
+
+# deductCoupon/deductPayBackNotice/post   核销营销资源接口
+coupon_pay:
+  url: "http://java.promotecenter.service.turboradio.cn/deductCoupon/deductPayBackNotice"
+  data:
+    requestNo: '1'
+    payNoticeList:
+      - memberId: 15965886
+        mobile: '1515713331383'
+        bankCode: '1'
+        payStatus: '1'
+        orderAmount: 1
+        equityAmount: 100
+        orderNo: '1'
+        couponId: '161069523948000011'
+

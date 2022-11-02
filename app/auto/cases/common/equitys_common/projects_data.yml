@@ -1,0 +1,185 @@
+
+headers:
+  Content-Type: "application/json"
+  Authorization: "Bearer 5f8e5dd3-ab02-4b01-83e6-720bda9de532"  #test的
+#  Authorization: "Bearer b4da104c-7c7a-4397-8a98-8ed4182a28fc"  #rc的
+
+#project_add/POST 新增项目接口测试数据
+project_add:
+  url: "http://issue.equity.backend.turboradio.cn/project/add"
+  data:
+    type: "2"
+    projectId: null
+    merchantId: "7"
+    merchantName: "上海聚音信息科技有限公司"
+    customerId: "492"
+    customerName: "RCXXX"
+    money: 100000
+    name: "sdfdsfsf"
+    beginToEnd: null
+    policyNum: null
+    beginDate: "2020-11-09"
+    finishDate: null
+    isLongTerm: 1
+    remark: "111"
+    groups: []
+    limits:
+      projectId: ""
+      limitAmount: ""
+      limitMoney: ""
+      isUnlimitedAmount: "2"
+      isUnlimitedMoney: "2"
+    workerName: "卜新祥"
+    insuranceCompanyId: "139091"
+    isUnlimited: 1
+
+
+
+#group_add/POST新增项目分组的接口数据
+group_add:
+  url: "http://issue.equity.backend.turboradio.cn/group/add"
+  data:
+    name: "112212"
+    type: null
+    merchantId: "7"
+    programId: "107"   #  方案ID
+    programName: null
+    projectId: "813"
+    money: 0
+    moneyPerUser: 100
+    activeMethod: null
+    deliveryMethod: "2"
+    mergeStatus: "0"
+    timesStatus: "0"  # 是否为次卡(权益卡类型)  0 面额卡 1 次卡
+    limitOfReceive: null
+    nominalTimes: 0
+    oneTimeValue: 0
+    effectiveType: "1"
+    isUnlimitedAmount: 1
+    isUnlimitedSingleAmount: "0"
+    validityPeriod: "1"
+    validityPeriodType: "1"
+    isValidityPeriodFollowProject: null
+    beginToEnd: null
+    beginDate: ""
+    finishDate: ""
+    isInstallment: "0"
+    equityName: "药联健康权益"  #权益名称
+    isUnlimitedQuantity: "2"  # 是否不限制领取数量 1 不限制 0 限制 2 跟随项目
+    isUnlimitedDrawMoney: "2"  # 是否限制领取金额 0 限制 1 不限制 2 跟随项目
+    limitOfDrawMoney: null
+    limitOfMoneyPerUser: ""   # 面额无固定额度上限（必须大于零）
+    installmentInterval: 0
+    installmentCount: 0
+    delayType: "1"   # 延迟生效类型：1：即刻生效2：延迟生效
+    delayTime: 0      # 延迟生效天数
+    channelSetting:
+      channelType: "7"
+      isOpenCdKey: "0"
+      scanType: "1"
+      employeeVerifyData: []
+      platformVerifyData: []
+      isOpenCdKeyWeb: false
+
+    saleChannelSetting:
+      channelValue: []
+      saleChannelType: "1"
+      organizationId: []
+      organizationLimitType: "1"
+
+    limitMoneyType: null
+    limitAmountType: null  # 权益发放数量周期限制类型（1=终身
+    sharedEnable: "0"
+
+# projectLimit/projectChangeLimit/POST   #项目更改领取限制(更改策略)
+projectLimit_projectChangeLimit:
+  url: "http://issue.equity.backend.turboradio.cn/projectLimit/projectChangeLimit"
+  data:
+    projectId: "813"
+    limitAmount: 0          # 限制领取数量
+    limitAmountType: "1"    # 权益发放数量周期限制类型(1=终身 2=年 3=月 4=日)
+    limitMoney: 0           # 限制领取金额
+    limitMoneyType: "1"     # 权益发放金额周期限制类型（1=终身 2=年 3=月 4=日)
+    isUnlimitedAmount: 2    # 是否项目数量不限额(1:限额;2:不限额)
+    isUnlimitedMoney: 1     # 是否项目金额不限额(1:限额；2：不限额)
+
+
+# group/edit/POST     # 编辑分组的接口数据
+group_edit:
+  url: "http://issue.equity.backend.turboradio.cn/group/edit"
+  data:
+    name: "464424"
+    type: null
+    groupId: "2253"
+    merchantId: "7"
+    programId: "107"
+    programName: "无限制使用方案"    # 使用方案
+    projectId: "813"
+    money: 0
+    moneyPerUser: "100.00"
+    activeMethod: "0"
+    deliveryMethod: "2"
+    mergeStatus: "0"    # 是否允许合并  （0：否  1：是）
+    timesStatus: "0"
+    limitOfReceive: "0"   # # 最大领取数量
+    nominalTimes: 0   # 可使用次数（0为不限制）
+    oneTimeValue: 0
+    effectiveType: "1"    # 生效方式 1 按激活时间 2 按项目起效时间 3 自定义时间
+    isUnlimitedAmount: 1    # 分组额度:是否不限制额度（不超过项目总额）1 不限制 0 限制
+    isUnlimitedSingleAmount: "0"    # 单权益面额:是否是固定额度（不超过分组总额）1 不固定 0 固定
+    validityPeriod: "1"   # 权益有效期
+    validityPeriodType: "1"   # 权益有效期 类型 有效期类型 1 年 2 月 3 日
+    isValidityPeriodFollowProject: null
+    beginToEnd: ["0000-00-00","0000-00-00"]
+    beginDate: "0000-00-00"     #   权益卡有效期开始时间
+    finishDate: "0000-00-00"    # 权益卡有效期结束时间
+    isInstallment: "0"          # 是否分期 0 不分期 1 分期
+    equityName: "药联健康权益"
+    isUnlimitedQuantity: "2"    # 是否不限制领取数量  0 限制 1 不限制 2跟随项目
+    isUnlimitedDrawMoney: "2"   # 是否限制领取金额 0 限制 1 不限制 2 跟随项目
+    limitOfDrawMoney: "0.00"    # 最大领取金额限制
+    limitOfMoneyPerUser: "0.00"   # 面额无固定额度上限（必须大于零）
+    installmentInterval: 0    # 分期间隔
+    installmentCount: "0"     #   分期期数
+    delayType: "1"    # # 延迟生效类型：1：即刻生效2：延迟生效
+    delayTime: "0"    # 延迟生效天数
+    channelSetting:
+      channelType: "7"
+      isOpenCdKey: "0"
+      scanType: "1"
+      employeeVerifyData: []
+      platformVerifyData: []
+      isOpenCdKeyWeb: false
+    saleChannelSetting:
+      "channelValue": []
+      "saleChannelType": "1"
+      "organizationId": []
+      "organizationLimitType": "1"
+    limitMoneyType: "1"     # 权益发放金额周期限制类型（1=终身
+    limitAmountType: "1"    # 权益发放数量周期限制类型（1=终身
+    sharedEnable: "0"
+
+# redeem/add/POST   # 单个生成权益的接口数据(新增一个兑换码)
+redeem_add:
+  url: "http://issue.equity.backend.turboradio.cn/redeem/add"
+  data:
+    cdKey: null
+    userId: null
+    name: null      # 姓名
+    mobile: null      # 手机号
+    verifyName: null
+    verifyMobile: null
+    verifyIdCard: null
+    verifyKeyword1: null
+    verifyKeyword2: null
+    verifyKeyword3: null
+    merchantId: "7"     # 商户ID
+    projectId: "416378"   # 项目ID
+    groupId: "3687"     # 分组ID
+    customerId: null
+    nominalValue: "100.00"
+    nominalTimes: null
+    oneTimeValue: null
+    idCardType: "01"     # 身份证类型
+
+

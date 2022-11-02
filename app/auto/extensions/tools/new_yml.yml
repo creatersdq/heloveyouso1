@@ -1,0 +1,10 @@
+requestNo: '1'
+payNoticeList:
+- memberId: 15965886
+  mobile: '1515713331383'
+  bankCode: '1'
+  payStatus: '1'
+  orderAmount: 1
+  equityAmount: 100
+  orderNo: '1'
+  couponId: '161069523948000011'

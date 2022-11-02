@@ -1,0 +1,33 @@
+# 数据库配置
+TEST_DB_CONFIG:
+  DATABASE_HOST: "udtest.uniondrug.com"
+  DATABASE_PORT: "6033"
+  DATABASE_USERNAME: "develop"
+  DATABASE_PASSWORD: "develop123"
+  DATABASE_NAME: "cn_uniondrug_module_equity_claim_new2"
+  MONGODB_CONNECT: "mongodb://adminUser:juyin#2020@192.168.3.26:27017/admin"
+  CW_DATABASE_HOST: "udtest.uniondrug.com"
+  CW_DATABASE_PORT: "6033"
+  CW_DATABASE_USERNAME: "develop"
+  CW_DATABASE_PASSWORD: "develop123"
+  CW_DATABASE_NAME: "cn_udm_insure"
+  ENV: "TEST"
+
+RC_DB_CONFIG:
+  DATABASE_HOST: "rm-bp1l9xe2xdx8oqf0x.mysql.rds.aliyuncs.com"
+  DATABASE_PORT: "3306"
+  DATABASE_USERNAME: "rctest_iud"
+  DATABASE_PASSWORD: "tset@987#gurdnoinu"
+  DATABASE_NAME: "cn_uniondrug_module_equity_claim_new"
+  MONGODB_CONNECT: "mongodb://uniondrug:DC_rc123@172.16.0.64:27017/module_equity_claim"
+  CW_DATABASE_HOST: "rm-bp1o57doq4j0r4j1i.mysql.rds.aliyuncs.com"
+  CW_DATABASE_PORT: "3306"
+  CW_DATABASE_USERNAME: "rctest_iud"
+  CW_DATABASE_PASSWORD: "tset@987#gurdnoinu"
+  CW_DATABASE_NAME: "cn_udm_insure"
+  ENV: "RC"
+
+
+
+
+

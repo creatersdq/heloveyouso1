@@ -1,0 +1,195 @@
+headers:
+  Content-Type: "application/json"
+  Authorization: ""
+
+
+# login/sendCaptcha/post  微信公众号登录获得验证码接口
+login_sendCaptcha:
+  url: "http://auth-backend.turboradio.cn/login/sendCaptcha"
+  data:
+    mobile: "15158888888"
+
+# login/login/post  微信公众号登录接口
+login_login:
+  url: "http://auth-backend.turboradio.cn/login/login"
+  data:
+    mobile: "15158888888"
+    code: ""
+
+
+# v/project/user/check/post  微信公众号权益输入权益电子码
+v_project_user_check:
+  url: "http://activate-equity-backend.turboradio.cn/v/project/user/check"
+  data:
+    cdKey: ""
+    channel: "cdKey"
+
+
+# v/equity/newActivate/post   确认激活权益
+v_equity_newActivate:
+  url: "http://activate-equity-backend.turboradio.cn/v/equity/newActivate"
+  data:
+    cdKey: ""
+    channel: "cdKey"
+
+
+
+#order/createOrder               o2o创建订单
+o2o_order:
+  headers:
+    User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+    Content-Type: "application/json;charset=UTF-8"
+    Authorization: "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZW1iZXJJZCI6MTU5NjU4ODYsInd4T3BlbmlkIjoib2YtRlh3enBUU3hlenI0N0Z5X0l2WFpJYUVKMCIsInZlcnNpb24iOnsia2V5IjoiQVVUSF93ZWNoYXRfMTU5NjU4ODYiLCJ2YWx1ZSI6IjEifSwiaW5mbyI6eyJuYW1lIjoiXHU1MzVjXHU2NWIwXHU3OTY1IiwibW9iaWxlIjoiMTUxNTg4ODg4ODgifSwiY2hhbm5lbCI6eyJvcGVuaWQiOiJvZi1GWHd6cFRTeGV6cjQ3RnlfSXZYWklhRUowIiwidHlwZSI6IndlY2hhdCJ9fQ.EC_YdzsxbNsMFmnT2AtVYkE0e4eJwrFKAi7fPmKUtvsN9qYb4brJUE6pLiTR3v0P07TCXXcEcwvbHlj39aODD83vBc8emxdWsGCFxMms3ntlV-lP6ktwDEcO7hqY8gQKAqOsWtuiNqLYmO2CI0qXjcw_9AbTWhYz7VfdxZds27BRRnIdt-S81sYijDjGOq_lLejZ9yMIaUW4hoc3tumeDlxw55tViP5YAr3ciVVm5FyVue5AfuNvurRFh3pR8d4eUSakmsO6UDgniO8KaoAMHMtE48_1JIeUPrZzxIxiWyZAFmddWwRwVZ1uaJA7VNICT1ZfwGAULSV5YYNOgVPtMw"
+  url: "https://eshop.turboradio.cn/api/order/createOrder"
+  data:
+    cooperator: '539'
+    substationId: '1'
+    substationType: '3'
+    signText: ''
+    tripartiteTag: ''
+    redisCartSourceTradeCodes:
+      - 54161297dfc80894d09c0980c8eb2a1d
+    canUseCouponNum: '1'
+    canUseEquityNum: '2'
+    canUseVoucherNum: '0'
+    equityId: ''
+    cardId: 556896aff4d94319948e
+    actionType: '1'
+    goodsPrice: '25.00'
+    quantity: '1'
+    expressPrice: '5.00'
+    expressDistance: '2704'
+    expressType: '1'
+    expressCard: ''
+    expressCardCount: '0'
+    addressId: ''
+    equityPrice: '0.00'
+    equityName: '1228'
+    discountPrice: '8.00'
+    voucherPrice: '0.00'
+    voucherGoodsList: [ ]
+    servicePrice: '0.00'
+    totalPrice: '30.00'
+    salePrice: '22.00'
+    saleGoodsPrice: '17.00'
+    partnerId: '0'
+    cooperation: o2oshanghaibeiyi
+    partnerName: 上海北翼
+    storeId: '5962'
+    storeNo: '500019'
+    store:
+      storeName: 万荣店
+      internalId: '500019'
+      merchantId: '663'
+      organizationId: '5962'
+      type: '0'
+      cityCode: '021'
+      shopNo: shanghaibeiyi500019
+      provinceName: 上海市
+      cityName: 上海市
+      areaName: 静安区
+      stationAddress: 上海市静安区灵石路735弄43号
+      lng: '121.438880'
+      lat: '31.286530'
+      contactName: 张胜琪
+      contactPhone: ''
+      phone: 15901768645/021-56650551
+      startTime: 08:00:00
+      endTime: 20:00:00
+      isShow: '1'
+      status: '1'
+      merchantCenterStatus: '1'
+      appSend: '1'
+      onlySelf: '0'
+      expressStatus: '1'
+      km: '3.0'
+      gmtCreated: '2019-12-03 18:26:44'
+      gmtUpdated: '2020-12-25 11:20:58'
+    merchantId: '663'
+    scene: '1'
+    storeName: 万荣店
+    precheckNo: ''
+    goodsList:
+      - goodsId: '2097677'
+        internalId: '2097677'
+        quantity: '1'
+        stock: '0'
+        price: '25.0'
+        totalPrice: '25.0'
+        equityPrice: '0'
+        tradeCode: '6900966688219'
+        realTradeCode: '6900966688219'
+        approvalNumber: 国药准字Z43020334
+        realCommonName: 复方感冒灵颗粒
+        commonName: 复方感冒灵颗粒
+        form: 14g*15袋
+        pack: 盒
+        effect: 辛凉解表，清热解毒。本品用于风热感冒之发热，微恶风寒，头身痛，口干而渴，鼻塞涕浊，咽喉红肿疼痛，咳嗽，痰黄粘稠。
+        img: http://uniondrug-release.oss-cn-shanghai.aliyuncs.com/oss/upload/file/goods/1583482474684.jpg
+        merchantId: '663'
+        preCheck:
+          internalId: '2097677'
+          directAmount: '0'
+          saleAmount: '17.00'
+          remark: ''
+        manufacturer: 华润三九(郴州)制药有限公司
+        isPrescription: false
+        couponAmount: '8.00'
+        coupons:
+          - couponId: '160912479467300012'
+            couponAmount: '8'
+            couponType: '1'
+        goodsSignType: ''
+        isOffShelf: false
+        isDrug: true
+        voucherGoodsPrice: '0.00'
+    addressInfo:
+      id: '103241'
+      memberId: '16232532'
+      name: 卜新祥
+      mobile: '15157181383'
+      province: 上海市
+      provinceCode: '021'
+      city: 上海市
+      cityCode: ''
+      region: 静安区
+      regionCode: ''
+      street: 江场路1412号
+      fullAddress: 上海市静安区江场路1412号
+      locationType: html5
+      long: '121.452549'
+      lat: '31.298926'
+      isDefault: '1'
+      secretUserName: ''
+      secretUserMobile: ''
+      page: '1'
+      limit: '10'
+    onlyCash: false
+    showOrder:
+      isCoupon: true
+      expressCardPrice: '0.00'
+      goodsPrice: '25.00'
+      equityPrice: '0.00'
+      salePrice: '22.00'
+      discountPrice: '8.00'
+      voucherPrice: '0.00'
+      expressPrice: '5.00'
+      totalPrice: '30.00'
+    rxDrugGoods: [ ]
+    prescriptionUrl: ''
+    serviceList:
+      - productId: '10009'
+        price: '0.00'
+        serviceName: 配送增值服务
+    waybillNo: '2012289710153101504859425'
+    sourceExpressPrice: '10.00'
+    expressRuleText: 商品金额已满足运费减免活动，已为您减免5.00元，再买25.00元可全免运费（含特殊商品订单除外）
+    isOpen: true
+    isPreTime: ''
+    hideResource: '0'
+    comment: ''
+    reservedName: 卜新祥
+    reservedMobile: '15157181383'
+    userReceiverLng: 121.45258
+    userReceiverLat: 31.29891
+
