@@ -1,7 +1,7 @@
 class ShapeFactory(object):
     """工厂类"""
 
-    def getShape(self):
+    def get_shape(self):
         return self.shape_name
 
 
@@ -40,7 +40,7 @@ if __name__ == "__main__":
     fac = Shape()
     obj = fac.create('Circle')
     obj.draw()
-    obj.getShape()
+    obj.get_shape()
 
 # 简单工厂
 # 工厂模式（Factory Pattern）是Java中最常用的设计模式之一。
