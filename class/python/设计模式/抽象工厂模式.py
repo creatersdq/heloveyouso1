@@ -104,12 +104,16 @@ class ComputerEngineer(object):
         self.cpu = computer_obj.createCpu()
         self.mainboard = computer_obj.createMainboard()
 
-        info = """------- computer [%s] info:
+        info = """
+    ------- computer [%s] info:
     cpu: %s
     mainboard: %s
 
- -------- End --------
-        """ % (computer_obj.computer_name, self.cpu.series_name, self.mainboard.series_name)
+    -------- End --------""" % (
+            computer_obj.computer_name,
+            self.cpu.series_name,
+            self.mainboard.series_name
+        )
         print(info)
 
 

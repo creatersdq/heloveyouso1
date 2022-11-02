@@ -9,7 +9,9 @@
 
 
 class ShapeFactory(object):
-    """工厂类"""
+    """
+    工厂类
+    """
 
     def get_shape(self):
         return self.shape_name
@@ -33,10 +35,14 @@ class Rectangle(ShapeFactory):
 
 
 class ShapeInterfaceFactory(object):
-    """接口基类"""
+    """
+    接口基类
+    """
 
     def create(self):
-        """把要创建的工厂对象装配进来"""
+        """
+        把要创建的工厂对象装配进来
+        """
         raise NotImplementedError
 
 
