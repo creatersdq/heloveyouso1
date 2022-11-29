@@ -71,11 +71,6 @@ class IntelCpu(AbstractCpu):
         self.series_name = series
 
 
-class IntelCpu(AbstractCpu):
-    def __init__(self, series):
-        self.series_name = series
-
-
 class AmdCpu(AbstractCpu):
     def __init__(self, series):
         self.series_name = series
