@@ -1,5 +1,5 @@
 # 基类文件
-from apps.ui_auto.core.utils import DriverUtil
+from apps.ui.core.utils import DriverUtil
 
 
 # 创建对象库层的基类
@@ -13,6 +13,9 @@ class BasePage:
     # 基类的方法最终还是提供给这些共性的代码来使用
     def find_element(self, location):
         return self.driver.find_element(*location)
+
+    def open_url(self, url):
+        return self.driver.get(url)
 
 
 # 创建操作层的基类

@@ -8,7 +8,6 @@ from selenium import webdriver
 class DriverUtil:
     # 私有变量，用来存储浏览器驱动对象
     __driver = None
-
     is_open = True
 
     # 获取浏览器驱动
@@ -17,23 +16,35 @@ class DriverUtil:
     @classmethod
     def get_driver(cls):
         if cls.__driver is None:
-            cls.__driver = webdriver.Chrome()
+            cls.__driver = webdriver.Firefox()
             cls.__driver.maximize_window()
             cls.__driver.implicitly_wait(10)
         return cls.__driver
 
     # 关闭浏览器驱动
-    # 1.增加判断浏览器驱动是否为空的判断，如果为空，则不执行关闭
     @classmethod
-    def quit_dirver(cls):
+    def quit_driver(cls):
         if cls.is_open and cls.__driver is not None:
             time.sleep(2)
-            cls.get_driver().quit()
+            cls.__driver.quit()
             cls.__driver = None
 
 
-# 窗口切换的方法
+# 窗口切换
 def switch_window():
     driver = DriverUtil.get_driver()
     handlers = driver.window_handles
     driver.switch_to.window(handlers[-1])
+
+
+if __name__ == "__main__":
+    w_driver = DriverUtil.get_driver()
+    c_driver = DriverUtil.get_driver()
+    c_driver.get("http://www.baidu.com")
+    DriverUtil.quit_driver()
+
+    # w_driver.get("http://www.baidu.com")
+    # switch_window()
+    # w_driver.get("http://frontend-insurance-platform.turboradio.cn/login")
+    # DriverUtil.quit_driver()
+

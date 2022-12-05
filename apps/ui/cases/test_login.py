@@ -1,9 +1,9 @@
 import time
 import unittest
-import parameterized as parameterized
-from apps.ui_auto.core.config import BASE_DIR
-from apps.ui_auto.page.login_page import LoginProxy
-from apps.ui_auto.core.utils import DriverUtil
+import parameterized
+from apps.ui.core.config import BASE_DIR
+from apps.ui.page.login_page import LoginProxy
+from apps.ui.core.utils import DriverUtil
 import json
 
 
@@ -17,7 +17,6 @@ def build_data():
             test_data.append((case_data.get('username'),
                               case_data.get('password'),
                               case_data.get('expect')))
-            print(test_data)
     return test_data
 
 
@@ -33,14 +32,15 @@ class TestLogin(unittest.TestCase):
     def tearDownClass(cls):
         # 关闭浏览器
         time.sleep(2)
-        DriverUtil.quit_dirver()
+        DriverUtil.quit_driver()
 
     def setUp(self):
         # 方法级别的fixture，由于每条测试都要回归到原点
-        self.driver.get('https://ad.xxx.com.cn/home')
+        target_url = "http://frontend-insurance-platform.turboradio.cn/login"
+        self.driver.get(target_url)
 
     # parameterized中的数据是一个数组，数组内的每个元素可以数组或者元组
-    @parameterized.expand(build_data)
+    @parameterized.parameterized.expand(build_data)
     def test_login(self, username, password, expect):
         """
         登录功能-登录成功
@@ -50,3 +50,7 @@ class TestLogin(unittest.TestCase):
         time.sleep(3)
         msg = self.driver.title
         self.assertIn(expect, msg)
+
+
+if __name__ == "__main__":
+    build_data()
