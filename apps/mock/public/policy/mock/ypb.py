@@ -530,7 +530,7 @@ if __name__ == "__main__":
     # p = PolicyBase("RC")
     # print(p.response, p.request)
     # p.invoice_data_mock()
-    # class C(object):
+    # classes C(object):
     #     x = 4
     # c = C()
     # c.y = 5

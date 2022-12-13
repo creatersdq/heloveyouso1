@@ -233,7 +233,7 @@ if __name__ == "__main__":
 # from apps.extensions.random_number import StochasticNum
 
 
-# class ServerClientOs(object):
+# classes ServerClientOs(object):
 #     def __init__(self):
 # self.entry_name = entry_name
 # self.server_config = json.loads(redis_query(name='cn_ud_test_mock')["server_config"])[entry_name + "_" + dev]

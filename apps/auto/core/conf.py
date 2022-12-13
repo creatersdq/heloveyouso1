@@ -3,10 +3,10 @@
     # yaml键值对：即python中字典
     usr: my
     psw: 123455
-    类型：<class 'str'>
+    类型：<classes 'str'>
     ***转化yaml数据为字典或列表***
     {'usr': 'my', 'psw': 123455}
-    类型：<class 'dict'>
+    类型：<classes 'dict'>
 """
 
 import yaml
