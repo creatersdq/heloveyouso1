@@ -3,8 +3,8 @@ from contextlib import contextmanager
 import pymongo
 
 from pymongo.mongo_client import MongoClient
-from public.do_read_yaml import read_case_data
-from extensions.logger import log
+from extension.do_read_yaml import read_case_data
+from extension.logger import log
 
 
 class MongoDBConn(object):

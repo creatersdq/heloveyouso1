@@ -5,8 +5,8 @@ import sys
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
-from celery import Celery
-from celery.utils.log import get_task_logger
+from job import Celery
+from job.utils.log import get_task_logger
 
 app = Celery('job', include=["app.job.task"])
 # 定义配置文件路径

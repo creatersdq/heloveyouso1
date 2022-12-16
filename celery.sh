@@ -1,7 +1,7 @@
 #!/bin/bash
 #执行shell脚本 sh ./celery_start.sh
 echo "celery 脚本开始启动 --------"
-job_comm='celery -A app.job.celery_app worker -l info'
+job_comm='job -A app.job.celery_app worker -l info'
 # shellcheck disable=SC2034
 if current_dir=$(
   # shellcheck disable=SC2046

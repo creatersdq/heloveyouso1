@@ -9,7 +9,7 @@ import pytest
 from apps.pro.ui.core.config import BASE_DIR
 from apps.pro.ui.page.login import LoginProxy
 from apps.pro.ui.core.utils import DriverUtil
-from extensions.logger import log
+from extension.logger import log
 
 
 def build_data():

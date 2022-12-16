@@ -7,8 +7,8 @@ import time
 from fastapi import FastAPI, Request, Response, status, Depends
 from starlette.middleware.cors import CORSMiddleware
 from fastapi.exceptions import RequestValidationError, ValidationError
-from extensions import res_wrapper
-from extensions.logger import log
+from extension import res_wrapper
+from extension.logger import log
 from routing_registered import register_router
 from pyinstrument import Profiler
 

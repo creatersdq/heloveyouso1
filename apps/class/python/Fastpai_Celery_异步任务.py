@@ -1,5 +1,5 @@
 # app.py
-from celery import Celery
+from job import Celery
 
 app = Celery('tasks', broker='pyamqp://guest@localhost//')
 

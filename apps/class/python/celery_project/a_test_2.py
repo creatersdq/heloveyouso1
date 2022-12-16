@@ -4,9 +4,9 @@ from classes.python.celery_project.tasks import add
 from classes.python.celery_project.app import app
 
 # print(app)
-# os.system("celery multi stopwait w1 -A app -l info")
+# os.system("job multi stopwait w1 -A app -l info")
 # 关闭celery进程
-# os.system("ps auxww|grep 'celery'|grep -v grep|awk '{print $2}'|xargs kill -9")
+# os.system("ps auxww|grep 'job'|grep -v grep|awk '{print $2}'|xargs kill -9")
 
 """
 delay() 和 apply_async() 方法会返回一个 AsyncResult 实例，可以用于进行跟踪任务状况。
@@ -34,7 +34,7 @@ add.apply_async((2, 2), queue='lopri', countdown=10)
   一个任务只能有当前只能有一个状态，但他的执行过程可以为多个状态，一个典型的阶段是：PENDING -> STARTED -> SUCCESS
   启动状态是一种比较特殊的状态，仅在 task_track_started 启用设置或 @task(track_started=True)的情况下才会进行记录。 
   挂起状态实际上不是记录状态，而是未知任务ID的默认状态，可以从此实例中看到：
->>> from proj.celery import app
+>>> from proj.job import app
 >>> res = app.AsyncResult('this-id-does-not-exist')
 >>> res.state
 'PENDING'
@@ -47,10 +47,10 @@ add.apply_async((2, 2), queue='lopri', countdown=10)
 """
 # task_id = r.id
 
-# celery multi start w1 -A proj -l info
-# celery  multi restart w1 -A proj -l info
+# job multi start w1 -A proj -l info
+# job  multi restart w1 -A proj -l info
 #
 # # 异步关闭 立即返回
-# celery multi stop w1 -A proj -l info
+# job multi stop w1 -A proj -l info
 # # 等待关闭操作完成
-# celery multi stopwait w1 -A proj -l info
+# job multi stopwait w1 -A proj -l info

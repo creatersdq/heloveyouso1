@@ -7,8 +7,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
 from contextlib import contextmanager
-from db.tools.redis import redis_query
-from extensions.logger import log
+from db.redis import redis_query
+from extension.logger import log
 
 
 # = event.listens_for(before_cursor_execute)

@@ -1,7 +1,7 @@
 import os
 import sys
 from datetime import timedelta
-from celery import Celery
+from job import Celery
 
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # print(BASE_DIR)

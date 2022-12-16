@@ -2,7 +2,7 @@
 import pymongo
 
 from core.mongo import MongoDBConn
-from extensions.logger import log
+from extension.logger import log
 
 
 def get_mongodb_log(

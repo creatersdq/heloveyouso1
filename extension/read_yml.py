@@ -1,6 +1,6 @@
 import os
 import yaml
-from apps.core.conf import setting
+from core.conf import setting
 
 
 # 获取yml文件的接口入参内容

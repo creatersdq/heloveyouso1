@@ -9,7 +9,7 @@ sys.path.append(rootPath)
 
 if __name__ == "__main__":
     a = os.getcwd()
-    # os.system("celery -A celery_job worker -l info")
+    # os.system("job -A celery_job worker -l info")
     url = "http://jm-insure.turboradio.cn/bill/getClaimBill"
     body = {
         "billNo": "20220926100954"

@@ -5,7 +5,7 @@ curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
 import time
-from schems.policy.common import *
+from model.policy.common import *
 from job.celery_app import app
 from job.celery_session import session_post
 

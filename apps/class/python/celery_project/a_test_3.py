@@ -1,5 +1,5 @@
 import time
-from celery import group
+from job import group
 
 from classes.python.celery_project.tasks import *
 
