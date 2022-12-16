@@ -1,0 +1,32 @@
+ENV_STATE: "pro"
+DEVCONFIG:
+  DATABASE_HOST: "582959f06c18d.sh.cdb.myqcloud.com"
+  DATABASE_PORT: "3712"
+  DATABASE_USERNAME: "root"
+  DATABASE_PASSWORD: "juyin@2015"
+  TASK_SYSPATH: "/Users/living/Desktop/quality.autotest"
+  REDIS: "192.168.3.133"
+  ENV: "DEV"
+  DB: 5
+TESTCONFIG:
+  DATABASE_HOST: "udtest.uniondrug.com"
+  DATABASE_PORT: "6033"
+  DATABASE_USERNAME: "develop"
+  DATABASE_PASSWORD: "develop123"
+  TASK_SYSPATH: "/Users/living/Desktop/quality.autotest"
+  CELERY_BROKER: "redis://0.0.0.0:6379/2"
+  CELERY_BACKEND: "redis://0.0.0.0:6379/3"
+  REDIS: "192.168.3.133"
+  ENV: "TEST"
+  BUG_IMAGE_URL: "."
+  DB: 5
+PROCONFIG:
+  DATABASE_HOST: "rm-bp1l9xe2xdx8oqf0x.mysql.rds.aliyuncs.com"
+  DATABASE_PORT: "3306"
+  DATABASE_USERNAME: "rctest_iud"
+  DATABASE_PASSWORD: "tset@987#gurdnoinu"
+  TASK_SYSPATH: "/Users/living/Desktop/quality.autotest"
+  ENV: "PRO"
+  BUG_IMAGE_URL: "/data/report/image_storage"
+  REDIS: "192.168.3.133"
+  DB: 4
