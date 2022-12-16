@@ -1,8 +1,8 @@
 # PO分层文件
 
 from selenium.webdriver.common.by import By
-from app.pro.ui.core.base_page import BasePage, BaseHandler
-from app.pro.ui.core.utils import DriverUtil
+from apps.pro.ui.core.base_page import BasePage, BaseHandler
+from apps.pro.ui.core.utils import DriverUtil
 
 
 # 登录页面对象库层

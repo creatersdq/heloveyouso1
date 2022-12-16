@@ -5,7 +5,7 @@ import time
 import unittest
 
 import pytest
-from app.pro.ui.core.config import BASE_DIR
+from apps.pro.ui.core.config import BASE_DIR
 
 # 设置浏览器驱动关闭开关为False
 # DriverUtil.is_open = False

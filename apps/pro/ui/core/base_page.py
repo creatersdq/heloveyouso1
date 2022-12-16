@@ -1,5 +1,5 @@
 # 基类文件
-from app.pro.ui.core.utils import DriverUtil
+from apps.pro.ui.core.utils import DriverUtil
 
 
 # 创建对象库层的基类

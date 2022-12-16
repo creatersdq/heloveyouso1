@@ -6,9 +6,9 @@ import parameterized
 import json
 import pytest
 
-from app.pro.ui.core.config import BASE_DIR
-from app.pro.ui.page.login import LoginProxy
-from app.pro.ui.core.utils import DriverUtil
+from apps.pro.ui.core.config import BASE_DIR
+from apps.pro.ui.page.login import LoginProxy
+from apps.pro.ui.core.utils import DriverUtil
 from extensions.logger import log
 
 
