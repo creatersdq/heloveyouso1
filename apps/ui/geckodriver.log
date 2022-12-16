@@ -223,3 +223,48 @@ DevTools listening on ws://127.0.0.1:53552/devtools/browser/6eb3ea9e-8cb1-4321-a
 JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
 console.warn: LoginRecipes: "Falling back to a synchronous message for: http://frontend-insurance-platform.turboradio.cn."
 1670235598183	Marionette	INFO	Stopped listening on port 53555
+1671157568341	geckodriver	INFO	Listening on 127.0.0.1:55174
+1671157568864	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55175" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/j2/ks22w19x07x0nf1nr6lvv_wh0000gp/T/rust_mozprofile1fqLW7"
+1671157569916	Marionette	INFO	Marionette enabled
+1671157569980	Marionette	INFO	Listening on port 55182
+2022-12-16 10:26:10.013 plugin-container[41342:17145202] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-12-16 10:26:10.014 plugin-container[41342:17145202] nil host used in call to allowsAnyHTTPSCertificateForHost:
+Read port: 55182
+2022-12-16 10:26:10.029 plugin-container[41342:17145202] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-12-16 10:26:10.030 plugin-container[41342:17145202] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-12-16 10:26:10.030 plugin-container[41342:17145200] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-12-16 10:26:10.030 plugin-container[41342:17145200] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:55175
+1671157570186	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-12-16 10:26:10.279 firefox-bin[41341:17145116] _TIPropertyValueIsValid called with 4 on nil context!
+2022-12-16 10:26:10.279 firefox-bin[41341:17145116] imkxpc_getApplicationProperty:reply: called with incorrect property value 4, bailing.
+2022-12-16 10:26:10.279 firefox-bin[41341:17145116] Text input context does not respond to _valueForTIProperty:
+2022-12-16 10:26:10.336 firefox-bin[41341:17145116] _TIPropertyValueIsValid called with 4 on nil context!
+2022-12-16 10:26:10.336 firefox-bin[41341:17145116] imkxpc_getApplicationProperty:reply: called with incorrect property value 4, bailing.
+2022-12-16 10:26:10.336 firefox-bin[41341:17145116] Text input context does not respond to _valueForTIProperty:
+2022-12-16 10:26:10.357 firefox-bin[41341:17145116] _TIPropertyValueIsValid called with 4 on nil context!
+2022-12-16 10:26:10.357 firefox-bin[41341:17145116] imkxpc_getApplicationProperty:reply: called with incorrect property value 4, bailing.
+2022-12-16 10:26:10.357 firefox-bin[41341:17145116] Text input context does not respond to _valueForTIProperty:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/j2/ks22w19x07x0nf1nr6lvv_wh0000gp/T/rust_mozprofile1fqLW7/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55175/devtools/browser/292e0d7c-5151-4899-8e30-4f3bb7f1cec5
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://frontend-insurance-platform.turboradio.cn."
+1671157580360	Marionette	INFO	Stopped listening on port 55182
+1671157677636	geckodriver	INFO	Listening on 127.0.0.1:55275
+1671157677643	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55276" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/j2/ks22w19x07x0nf1nr6lvv_wh0000gp/T/rust_mozprofileCxM7dS"
+2022-12-16 10:27:58.136 plugin-container[41396:17146384] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-12-16 10:27:58.137 plugin-container[41396:17146384] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-12-16 10:27:58.139 plugin-container[41396:17146384] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-12-16 10:27:58.140 plugin-container[41396:17146384] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-12-16 10:27:58.140 plugin-container[41396:17146390] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-12-16 10:27:58.140 plugin-container[41396:17146390] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1671157678157	Marionette	INFO	Marionette enabled
+1671157678186	Marionette	INFO	Listening on port 55281
+Read port: 55281
+WebDriver BiDi listening on ws://127.0.0.1:55276
+1671157678373	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/j2/ks22w19x07x0nf1nr6lvv_wh0000gp/T/rust_mozprofileCxM7dS/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55276/devtools/browser/2f4efcef-1769-42ff-8318-e1fd3935bebe
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://frontend-insurance-platform.turboradio.cn."
+1671157688118	Marionette	INFO	Stopped listening on port 55281
